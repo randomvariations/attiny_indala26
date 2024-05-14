@@ -11,22 +11,26 @@ Generate from assembly source:
 
 Edit FLIPPER_CODE with the value from from the flipper zero
 
+```
 avr-gcc -mmcu=attiny85 indala.S -o indala.elf
 avr-objcopy  -O binary indala.elf indala.bin
+```
 
 Generate from C code:
 
 Edit FLIPPER_CODE with the value from from the flipper zero
 
+```
 gcc indala.c -o indala
 ./indala
+```
 
 Credits:
 
-https://scanlime.org/2008/09/using-an-avr-as-an-rfid-tag/
+https://scanlime.org/2008/09/using-an-avr-as-an-rfid-tag/  
 https://github.com/rgerganov/ggtag
 
 Tested with a GGtag:
 
-https://www.crowdsupply.com/eurolan-ltd/ggtag
+https://www.crowdsupply.com/eurolan-ltd/ggtag  
 https://www.mouser.com/ProductDetail/Eurolan/GGTAG-01
